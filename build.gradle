@@ -21,15 +21,15 @@ buildscript {
     }
 }
 
-//sonarqube {
-   // properties {
-     //   property "sonar.projectKey", "Prueba"
-       // property "sonar.host.url", "http://localhost:9000/dashboard?id=Retosop"
-        //property "sonar.login", "eb77203412e0ad8a728cb5155d96ddb9ae6608d6"
-        //property "sonar.sourceEncoding", "UTF-8"
-        //property "sonar.coverage.exclusions", "**/*.java"
-    //}
-//}
+sonarqube {
+    properties {
+        property "sonar.projectKey", "pruebajenkins"
+        property "sonar.host.url", "http://localhost:9000"
+        property "sonar.login", "d3d8ed7eb81c2a31236db7f26182da0c3947c7df"
+        property "sonar.sourceEncoding", "UTF-8"
+        property "sonar.coverage.exclusions", "**/*.java"
+    }
+}
 
 ext {
     junitVersion = '5.7.2'
